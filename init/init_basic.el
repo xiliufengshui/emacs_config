@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/06 00:53:49>
+;; Time-stamp: <naturezhang 2015/01/09 16:31:40>
 ;;去掉工具栏
 (tool-bar-mode 0)
 ;;去掉菜单栏
@@ -89,6 +89,11 @@ try-expand-whole-kill))
 ;;设置标题栏 buffer 名字
 (setq frame-title-format "%b:%f")
 
+;; prefer utf-8 
+(setq prefer-coding-system 'utf-8-unix)
+;; save buffer with utf-8-unix
+(setq default-buffer-file-coding-system 'utf-8-unix)
+
 ;;递归使用minibuffer
 (setq enable-recursive-minibuffers t)
 
@@ -96,8 +101,8 @@ try-expand-whole-kill))
 ;;(ansi-color-for-comint-mode-on)
 
 ;;使用ido.el emacs 24.1 自带
-;;(require 'ido)
-;;(ido-mode t)
+(require 'ido)
+(ido-mode t)
 
 ;; mapping key bindings 检测系统 如果是mac os 则替换键映射
 (when (eq system-type 'darwin) ;; mac specific settings
