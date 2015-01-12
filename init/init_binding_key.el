@@ -1,15 +1,18 @@
-;; Time-stamp: <naturezhang 2015/01/06 01:38:28>
+;; Time-stamp: <naturezhang 2015/01/07 01:09:42>
 
 ;; 绑定 前缀 c-; for myself
 
 (define-prefix-command 'ctl-\;-map)
 (global-set-key (kbd "C-;") 'ctl-\;-map)
 
-;;cedet semantic
+;; replace list-buffers with ibuffer  
+(global-set-key (kbd "C-x C-b") 'ibuffer)
+
+;; cedet semantic
 (global-set-key (kbd "C-; C-j") 'semantic-ia-fast-jump)
 (global-set-key (kbd "C-; j") 'semantic-mrub-switch-tags)
 (global-set-key (kbd "C-; C-h") 'eassist-switch-h-cpp)
-;(global-set-key (kbd "C-; C-m") 'set-mark-command)
+;; (global-set-key (kbd "C-; C-m") 'set-mark-command)
 (global-set-key (kbd "C-; C-o") 'semantic-tag-folding-fold-all)
 (global-set-key (kbd "C-; o") 'semantic-tag-folding-show-all)
 (global-set-key (kbd "C-; C-i") 'semantic-tag-folding-fold-block)
@@ -48,3 +51,4 @@
 ;; (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 ;; (global-set-key (kbd "C-x b") 'helm-mini)
 ;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
+;; (global-set-key (kbd "C-h SPC") 'helm-all-mark-rings)
