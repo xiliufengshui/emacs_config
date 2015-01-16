@@ -6,3 +6,5 @@
 
 (yas/initialize)
 (yas/load-directory "~/emacs_config/plugin/yasnippet-0.6.1c/snippets")
+
+(provide 'init_plugin_yasnippet)

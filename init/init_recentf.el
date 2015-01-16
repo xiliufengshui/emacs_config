@@ -14,3 +14,5 @@
 
 
 
+
+(provide 'init_recentf)

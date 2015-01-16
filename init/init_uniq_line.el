@@ -20,3 +20,5 @@ BEG and END (region to sort)."
 	    (replace-match "" nil nil)) 
 	  (goto-char next-line)))))) 
 
+
+(provide 'init_uniq_line)

@@ -86,3 +86,5 @@
                                           (delete-window)))))
            (goto-char (point-min))))))))
 
+
+(provide 'init_stardict)

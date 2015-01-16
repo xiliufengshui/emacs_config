@@ -26,3 +26,5 @@ Argument ARG paren."
 
 
 
+
+(provide 'init_match_brackets)

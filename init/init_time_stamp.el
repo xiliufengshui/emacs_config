@@ -20,3 +20,5 @@
     " Time-stamp: <>"))
 ;;}}}
 
+
+(provide 'init_time_stamp)

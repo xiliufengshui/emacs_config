@@ -7,3 +7,5 @@
 (global-set-key (kbd "s-n") 'tabbar-forward-group)
 (global-set-key (kbd "s-b") 'tabbar-backward)
 (global-set-key (kbd "s-f") 'tabbar-forward)
+
+(provide 'init_plugin_tabbar)

@@ -46,3 +46,5 @@
 
 
 
+
+(provide 'init_plugin_cedet_ecb_cscope)

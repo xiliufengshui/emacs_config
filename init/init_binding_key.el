@@ -52,3 +52,5 @@
 ;; (global-set-key (kbd "C-x b") 'helm-mini)
 ;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
 ;; (global-set-key (kbd "C-h SPC") 'helm-all-mark-rings)
+
+(provide 'init_binding_key)

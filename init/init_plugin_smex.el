@@ -10,3 +10,5 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 
+
+(provide 'init_plugin_smex)

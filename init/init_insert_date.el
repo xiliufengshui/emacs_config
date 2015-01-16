@@ -6,3 +6,5 @@
   (interactive)
   (insert (format-time-string "%Y年%m月%e日 %p %l:%M %a")))
 
+
+(provide 'init_insert_date)

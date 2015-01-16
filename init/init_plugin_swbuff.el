@@ -10,3 +10,5 @@
 (setq swbuff-separator "|")
 (setq swbuff-window-min-text-height 1)
 
+
+(provide 'init_plugin_swbuff)

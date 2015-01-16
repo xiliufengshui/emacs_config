@@ -68,3 +68,5 @@
       )
     )
   )
+
+(provide 'init_my_defun)

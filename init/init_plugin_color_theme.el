@@ -17,3 +17,5 @@
 ;(color-theme-xemacs)			;灰白底
 ;(color-theme-subtle-hacker)		;青色 底
 ;(color-theme-pok-wog)			;青褐色
+
+(provide 'init_plugin_color_theme)

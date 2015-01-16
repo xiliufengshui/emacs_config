@@ -13,3 +13,5 @@ occurence of CHAR."
     (search-forward (string char) nil nil n)
     (backward-char 1))
   (setq unread-command-events (list last-input-event)))
+
+(provide 'init_go_to_char)

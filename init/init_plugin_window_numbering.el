@@ -2,3 +2,5 @@
 
 (require 'window-numbering)		
 (window-numbering-mode 1)
+
+(provide 'init_plugin_window_numbering)

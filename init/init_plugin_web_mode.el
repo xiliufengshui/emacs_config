@@ -11,3 +11,5 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+
+(provide 'init_plugin_web_mode)

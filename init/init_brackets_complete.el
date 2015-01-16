@@ -22,3 +22,5 @@
 ;;    (add-hook 'cperl-mode-hook 'my-c-mode-auto-pair)
 ;;    (add-hook 'perl-mode-hook 'my-c-mode-auto-pair)    
 
+
+(provide 'init_brackets_complete)

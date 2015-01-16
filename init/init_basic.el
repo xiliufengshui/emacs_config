@@ -119,3 +119,5 @@ try-expand-whole-kill))
 )
 (eshell)
 (toggle-frame-maximized)
+
+(provide 'init_basic)
