@@ -11,4 +11,4 @@
 
 
 
-(provide 'init_plugin_smex)
+(provide 'init-plugin-smex)

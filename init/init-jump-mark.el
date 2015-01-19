@@ -24,4 +24,4 @@ that was stored with ska-point-to-register."
 
 
 
-(provide 'init_jump_mark)
+(provide 'init-jump-mark)

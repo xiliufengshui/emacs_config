@@ -14,4 +14,4 @@ occurence of CHAR."
     (backward-char 1))
   (setq unread-command-events (list last-input-event)))
 
-(provide 'init_go_to_char)
+(provide 'init-go-to-char)

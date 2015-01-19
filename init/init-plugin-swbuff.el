@@ -11,4 +11,4 @@
 (setq swbuff-window-min-text-height 1)
 
 
-(provide 'init_plugin_swbuff)
+(provide 'init-plugin-swbuff)

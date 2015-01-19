@@ -87,4 +87,4 @@
            (goto-char (point-min))))))))
 
 
-(provide 'init_stardict)
+(provide 'init-stardict)

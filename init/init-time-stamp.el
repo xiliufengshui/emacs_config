@@ -21,4 +21,4 @@
 ;;}}}
 
 
-(provide 'init_time_stamp)
+(provide 'init-time-stamp)

@@ -4,4 +4,4 @@
 (setq user-mail-address "xiliufengshui@163.com") 
  
 
-(provide 'init_gnus)
+(provide 'init-gnus)

@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/19 02:29:50>
+;; Time-stamp: <naturezhang 2015/01/19 12:40:08>
 
 (add-to-list 'load-path "~/emacs_config/plugin/company-mode")
 
@@ -20,17 +20,31 @@
 (add-hook 'c++-mode-hook 
 	  '(lambda()
 	     (company-mode)
-	     (setq company-backends (delete 'company-semantic company-backends))
+	     (eval-after-load 'company
+	       '(add-to-list 'company-backends 'company-irony))
+
+	     ;; (optional) adds CC special commands to `company-begin-commands' in order to
+	     ;; trigger completion at interesting places, such as after scope operator
+	     ;;     std::|
+	     (add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
+;;	     (setq company-backends (delete 'company-semantic company-backends))
 ;;	     (define-key c-mode-map  [(tab)] 'company-complete)
 ;;	     (define-key c++-mode-map  [(tab)] 'company-complete)
 	     )
 	  )
 
 
- (add-hook 'c-mode-hook 
+(add-hook 'c-mode-hook 
  	  '(lambda()
 	     (company-mode)
-	     (setq company-backends (delete 'company-semantic company-backends))
+	     (eval-after-load 'company
+	       '(add-to-list 'company-backends 'company-irony))
+
+	     ;; (optional) adds CC special commands to `company-begin-commands' in order to
+	     ;; trigger completion at interesting places, such as after scope operator
+	     ;;     std::|
+	     (add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
+;;	     (setq company-backends (delete 'company-semantic company-backends))
 ;;	     (define-key c-mode-map  [(tab)] 'company-complete)
 ;;	     (define-key c++-mode-map  [(tab)] 'company-complete)
   	     )
@@ -38,7 +52,9 @@
 
 (add-hook 'python-mode-hook
 	  '(lambda()
-	     (company-mode)
+;;	     (company-mode)
+;;	     (run-python)
+	     (anaconda-mode)
 ;;	     (add-to-list 'company-backends 'company-anaconda)
 	   )
 )

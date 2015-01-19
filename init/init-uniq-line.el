@@ -21,4 +21,4 @@ BEG and END (region to sort)."
 	  (goto-char next-line)))))) 
 
 
-(provide 'init_uniq_line)
+(provide 'init-uniq-line)

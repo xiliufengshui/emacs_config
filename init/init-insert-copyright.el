@@ -30,4 +30,4 @@
  (forward-char 2)
   )
 
-(provide 'init_insert_copyright)
+(provide 'init-insert-copyright)

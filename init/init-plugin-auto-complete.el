@@ -6,4 +6,4 @@
 (add-to-list 'ac-dictionary-directories "~/emacs_config/plugin/auto-complete-myself/ac-dict")
 (ac-config-default)
 
-(provide 'init_plugin_auto_complete)
+(provide 'init-plugin-auto-complete)

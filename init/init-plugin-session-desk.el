@@ -13,4 +13,4 @@
 ;但是这并不是一个解决办法，因为哪个包里面有循环变量这个是不能完全预料到的，最根本的解决办法还是要从 session.el 本身下手。今天我就遇到了两个问题，一个好像是由于 org-mode 里面的另外一个循环变量引起的，还有就是 AucTeX 有关的，也不知道是 AucTeX 的原因还是 session.el 的原因，导致 Emacs 一打开 TeX 文件立即断错误退出，我把 ~/.session 删除之后就没有这个情况了。看来这个扩展还需要继续发展呢。
 
 
-(provide 'init_plugin_session_desk)
+(provide 'init-plugin-session-desk)

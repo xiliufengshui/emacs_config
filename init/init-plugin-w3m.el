@@ -6,4 +6,4 @@
 (setq w3m-default-display-inline-images t)
 (setq w3m-home-page "www.baidu.com")
 
-(provide 'init_plugin_w3m)
+(provide 'init-plugin-w3m)

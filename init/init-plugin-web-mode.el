@@ -12,4 +12,4 @@
 
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
-(provide 'init_plugin_web_mode)
+(provide 'init-plugin-web-mode)

@@ -10,4 +10,4 @@
 )
 ;;(global-set-key [f12] 'my-fullscreen);F12 全屏
 
-(provide 'init_fullscreen)
+(provide 'init-fullscreen)

@@ -1,7 +1,6 @@
-;; Time-stamp: <naturezhang 2015/01/05 19:59:08>
+;; Time-stamp: <naturezhang 2015/01/20 00:45:39>
 (require 'recentf)
 (recentf-mode 1)
-
 
 (defun recentf-open-files-compl ()
   (interactive)
@@ -13,6 +12,4 @@
     (find-file (cdr (assoc-ignore-representation fname tocpl)))))
 
 
-
-
-(provide 'init_recentf)
+(provide 'init-recentf)

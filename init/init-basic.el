@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/09 16:31:40>
+;; Time-stamp: <naturezhang 2015/01/20 01:21:36>
 ;;去掉工具栏
 (tool-bar-mode 0)
 ;;去掉菜单栏
@@ -19,7 +19,6 @@
 '(try-expand-line
 try-expand-line-all-buffers
 try-expand-list
-try-expand-list-all-buffers
 try-expand-dabbrev
 try-expand-dabbrev-visible
 try-expand-dabbrev-all-buffers
@@ -117,7 +116,11 @@ try-expand-whole-kill))
 (when (eq system-type 'windows-nt) ;; mac specific settings
   (cd "~/")
 )
+
 (eshell)
+;;set eshell theme color
+(color-theme-blue-eshell)
+
 (toggle-frame-maximized)
 
-(provide 'init_basic)
+(provide 'init-basic)

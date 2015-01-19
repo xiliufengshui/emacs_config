@@ -1,4 +1,4 @@
-;;  Time-stamp: <naturezhang 2015/01/05 19:53:27>
+;;  Time-stamp: <naturezhang 2015/01/20 00:10:03>
 
 ;;{{{ 使用%就可以上下翻动,匹配的括号
 ;;如果没有括号就输入%
@@ -23,8 +23,4 @@ Argument ARG paren."
 	)
   )
 
-
-
-
-
-(provide 'init_match_brackets)
+(provide 'init-match-brackets)

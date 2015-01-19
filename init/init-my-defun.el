@@ -69,4 +69,4 @@
     )
   )
 
-(provide 'init_my_defun)
+(provide 'init-my-defun)
