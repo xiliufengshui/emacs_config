@@ -1,4 +1,4 @@
-;;   Time-stamp: <naturezhang 2015/01/20 01:21:40>
+;;   Time-stamp: <naturezhang 2015/01/20 12:01:40>
 
 ;; init file
 (add-to-list 'load-path "~/emacs_config/init")
@@ -11,13 +11,13 @@
 ;;----------------------------------------------------------------------------
 ;; download plugin from elpa
 ;;----------------------------------------------------------------------------
-
+;;(require 'init-elpa-anything)
 
 
 ;;----------------------------------------------------------------------------
 ;; load configs from local
 ;;----------------------------------------------------------------------------
-(require 'init-plugin-color-theme)
+
 (require 'init-basic)
 (require 'init-binding-key)
 (require 'init-brackets-complete)
@@ -31,6 +31,7 @@
 (require 'init-my-defun)
 ;; (require 'init-plugin-auto-complete)
 ;; (require 'init-plugin-cedet-ecb-cscope)
+(require 'init-plugin-color-theme)
 (require 'init-plugin-company)
 (require 'init-plugin-helm)
 ;; (require 'init-plugin-session-desk)

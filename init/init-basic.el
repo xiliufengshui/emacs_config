@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/20 01:21:36>
+;; Time-stamp: <naturezhang 2015/01/20 12:00:44>
 ;;去掉工具栏
 (tool-bar-mode 0)
 ;;去掉菜单栏
@@ -118,8 +118,9 @@ try-expand-whole-kill))
 )
 
 (eshell)
-;;set eshell theme color
-(color-theme-blue-eshell)
+(after-load 'init-plugin-color-theme
+	    ;;set eshell theme color
+	    (color-theme-blue-eshell))
 
 (toggle-frame-maximized)
 
