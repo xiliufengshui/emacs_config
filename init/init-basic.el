@@ -1,8 +1,8 @@
-;; Time-stamp: <naturezhang 2015/01/20 12:00:44>
+;; Time-stamp: <naturezhang 2015/01/20 23:31:03>
 ;;去掉工具栏
 (tool-bar-mode 0)
 ;;去掉菜单栏
-;(menu-bar-mode 0)
+;;(menu-bar-mode 0)
 ;;关闭启动时开机画面
 (setq inhibit-startup-message t)
 ;;不要滚动栏，现在都用滚轴鼠标了，可以不用滚动栏了
@@ -16,23 +16,23 @@
 ;;特别有意思的是 try-expand-line，它可以帮你补全整整一行文字。我很多时后有两行文字大致相同，只有几个字不一样，但是我懒得去拷贝粘贴以下。那么我就输入这行文字的前面几个字。然后多按几下 M-/ 就能得到那一行。
 (global-set-key [(meta ?/)] 'hippie-expand)
 (setq hippie-expand-try-functions-list
-'(try-expand-line
-try-expand-line-all-buffers
-try-expand-list
-try-expand-dabbrev
-try-expand-dabbrev-visible
-try-expand-dabbrev-all-buffers
-try-expand-dabbrev-from-kill
-try-complete-file-name
-try-complete-file-name-partially
-try-complete-lisp-symbol
-try-complete-lisp-symbol-partially
-try-expand-whole-kill))
+      '(try-expand-line
+	try-expand-line-all-buffers
+	try-expand-list
+	try-expand-dabbrev
+	try-expand-dabbrev-visible
+	try-expand-dabbrev-all-buffers
+	try-expand-dabbrev-from-kill
+	try-complete-file-name
+	try-complete-file-name-partially
+	try-complete-lisp-symbol
+	try-complete-lisp-symbol-partially
+	try-expand-whole-kill))
 
 ;;时间显示设置
 ;;启用时间显示设置，在minibuffer上面的那个杠上（忘了叫什么来着）
 (display-time-mode 1)
-;;test
+
 ;;(format-time-string "%F")
 (setq display-time-format "%F %R %A")
 ;;时间使用24小时制
@@ -46,7 +46,6 @@ try-expand-whole-kill))
 (fset 'yes-or-no-p 'y-or-n-p)
 ;;允许minibuffer自由变化其大小（指宽度）
 (setq resize-mini-windows t)
-
 ;;允许自动打开图片，如wiki里面
 (auto-image-file-mode)
 ;;在minibuffer上面可以显示列号
@@ -55,15 +54,12 @@ try-expand-whole-kill))
 (setq fill-column 80)
 ;;当指针到一个括号时，自动显示所匹配的另一个括号
 (show-paren-mode 1)
-
 ;;设定删除保存记录为200，可以方便以后无限恢复
 (setq kill-ring-max 200)
 ;;增大使用查找函数和变量的寻找范围
 (setq apropos-do-all t)
-
 ;;允许emacs和外部其他程序的粘贴
 (setq x-select-enable-clipboard t)
-
 ;;所有的备份文件都放置在~/emacs_config/backup目录下
 (setq version-control t)
 (setq kept-old-versions 2)
@@ -75,7 +71,6 @@ try-expand-whole-kill))
 ;;（并不可取），也可以制定备份的方式。这里采用的是，把所有的文件备份都放在一个
 ;;固定的地方。对于每个备份文件，保留最原始的两个版本和最新的五个版本。
 ;;并且备份的时候，备份文件是复件，而不是原件。
-
 
 ;;winner mode
 ;;(winner-mode 1)
@@ -99,28 +94,24 @@ try-expand-whole-kill))
 ;;shell 使用颜色 ls --color  有用
 ;;(ansi-color-for-comint-mode-on)
 
-;;使用ido.el emacs 24.1 自带
-(require 'ido)
-(ido-mode t)
-
 ;; mapping key bindings 检测系统 如果是mac os 则替换键映射
 (when (eq system-type 'darwin) ;; mac specific settings
   (cd "~/")
   (setq mac-option-modifier 'control)
   (setq mac-command-modifier 'meta)
   (setq mac-control-modifier 'super)
-;;  (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
-)
+  ;;  (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
+  )
 
 ;; 初始化路径 eshell 窗口最大化
 (when (eq system-type 'windows-nt) ;; mac specific settings
   (cd "~/")
-)
+  )
 
 (eshell)
 (after-load 'init-plugin-color-theme
-	    ;;set eshell theme color
-	    (color-theme-blue-eshell))
+  ;;set eshell theme color
+  (color-theme-blue-eshell))
 
 (toggle-frame-maximized)
 

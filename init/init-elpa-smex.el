@@ -1,4 +1,6 @@
-;; Time-stamp: <naturezhang 2015/01/20 14:51:21>
+;; Time-stamp: <naturezhang 2015/01/21 00:10:39>
+
+(require-package 'smex)
 
 (require 'smex)
 (smex-initialize)
@@ -9,5 +11,4 @@
 ;; This is old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
-
-(provide 'init-plugin-smex)
+(provide 'init-elpa-smex)

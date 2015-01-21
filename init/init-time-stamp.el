@@ -1,5 +1,4 @@
-;;  Time-stamp: <naturezhang 2015/01/05 20:00:17>
-
+;;  Time-stamp: <naturezhang 2015/01/20 15:53:20>
 
 ;;时间戳设置(time-stamp)，设定文档上次保存的信息    
 (setq time-stamp-active t)    

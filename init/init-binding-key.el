@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/07 01:09:42>
+;; Time-stamp: <naturezhang 2015/01/21 16:19:36>
 
 ;; 绑定 前缀 c-; for myself
 
@@ -39,18 +39,5 @@
 (global-set-key (kbd "C-s-p") 'my-rollwindow-up)
 (global-set-key (kbd "C-s-n") 'my-rollwindow-down)
 
-;; semx
-;; bind some keys write in ~/emacs_config/config/init_plugin_smex.el
-;; (global-set-key (kbd "M-x") 'smex)
-;; (global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; This is old M-x.
-;; (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-
-;; helm
-;; bind some keys write in ~/emacs_config/config/init_plugin_helm.el
-;; (global-set-key (kbd "M-y") 'helm-show-kill-ring)
-;; (global-set-key (kbd "C-x b") 'helm-mini)
-;; (global-set-key (kbd "C-x C-f") 'helm-find-files)
-;; (global-set-key (kbd "C-h SPC") 'helm-all-mark-rings)
 
 (provide 'init-binding-key)

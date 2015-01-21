@@ -1,4 +1,4 @@
-;;  Time-stamp: <naturezhang 2015/01/05 19:53:59>
+;;  Time-stamp: <naturezhang 2015/01/20 22:34:44>
 
 ;; compile
 (defun my-compile ()
@@ -6,33 +6,26 @@
   (interactive)
   (delete-other-windows)
   (setq split-width-threshold nil)
-;;  (select-window-2)
+  ;;  (select-window-2)
   (save-some-buffers t nil)
   (compile "cd ../build && make")
-;;  (split-window-below)
+  ;;  (split-window-below)
   (shrink-window (* (/ (window-height) 5) -3))
   (setq split-width-threshold 160)
-;  (select-window-2)
-;    (select-window-1)
-;;  (eshell)
+  ;;  (eshell)
   )
-
 
 (defun my-rollwindow-down ()
   "roll window down"
   (interactive)
   (scroll-up-line)
-  (move-to-window-line nil)
-  )
-
+  (move-to-window-line nil))
 
 (defun my-rollwindow-up ()
   "roll window up"
   (interactive)
   (scroll-down-line)
-  (move-to-window-line nil)
-  )
-
+  (move-to-window-line nil))
 
 ;; kill all buffer
 (defun my-kill-all-buffer ()
@@ -42,16 +35,13 @@
   (delete-other-windows)
   (while (car BufferList)
     (kill-buffer (car BufferList))
-    (setq BufferList (cdr BufferList))
-    )
+    (setq BufferList (cdr BufferList)))
   (setq BufferList (buffer-list))
   (while (car BufferList)
     (kill-buffer (car BufferList))
-    (setq BufferList (cdr BufferList))
-    )
+    (setq BufferList (cdr BufferList)))
   (cd "~/")
-  (eshell)
-  )
+  (eshell))
 
 ;; open gvim 
 (defun gvim-current-file ()
@@ -61,12 +51,22 @@
     (setq progName "/usr/bin/gvim")
     (setq cmdStr (concat progName " \"" fname "\""))
     (if progName
-      (progn
-        (message "Gvim Running...")
-        (shell-command cmdStr)
-	)
+	(progn
+	  (message "Gvim Running...")
+	  (shell-command cmdStr)
+	  )
       )
     )
   )
+
+;; add provide to the file at end
+(defun my-insert-provide ()
+"add provide at end of file"
+  (interactive)
+  (insert "(provide '"(file-name-nondirectory buffer-file-name)")")
+  (backward-char 4)
+  (delete-char 3)
+)
+
 
 (provide 'init-my-defun)

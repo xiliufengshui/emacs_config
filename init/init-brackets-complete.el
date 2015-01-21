@@ -1,7 +1,7 @@
-;;  Time-stamp: <naturezhang 2015/01/20 11:33:35>
+;;  Time-stamp: <naturezhang 2015/01/20 14:24:20>
 
 ;;输入左边的括号，就会自动补全右边的部分.包括(), '', [] , {} ,""
-(defun my-c-mode-auto-pair ()
+(defun my-auto-pair ()
   (interactive)
   (make-local-variable 'skeleton-pair-alist)
   (setq skeleton-pair-alist '(
@@ -18,8 +18,8 @@
   (local-set-key (kbd "\"") 'skeleton-pair-insert-maybe))
 
 
-(add-hook 'c-mode-hook 'my-c-mode-auto-pair)
-(add-hook 'c++-mode-hook 'my-c-mode-auto-pair)
-(add-hook 'emacs-lisp-mode-hook 'my-c-mode-auto-pair)
+(add-hook 'c-mode-hook 'my-auto-pair)
+(add-hook 'c++-mode-hook 'my-auto-pair)
+(add-hook 'emacs-lisp-mode-hook 'my-auto-pair)
 
 (provide 'init-brackets-complete)

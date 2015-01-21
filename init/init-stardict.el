@@ -1,5 +1,4 @@
-;;  Time-stamp: <naturezhang 2015/01/05 19:59:55>
-
+;;  Time-stamp: <naturezhang 2015/01/20 15:52:58>
 
 ;; author: pluskid
 ;; 调用 stardict 的命令行接口来查辞典
@@ -25,8 +24,6 @@
       (concat "sdcv -n "
               (buffer-substring begin end))))))
 
-
-
 ;; author: pluskid
 ;; 调用 stardict 的命令行程序 sdcv 来查辞典
 ;; 如果选中了 region 就查询 region 的内容，否则查询当前光标所在的单词
@@ -36,7 +33,7 @@
   (interactive)
   (let ((word (if mark-active
                   (buffer-substring-no-properties (region-beginning) (region-end))
-                  (current-word nil t))))
+		(current-word nil t))))
     ;; (setq word (read-string (format "Search the dictionary for (default %s): " word)
     ;;                         nil nil word))
     (set-buffer (get-buffer-create "*sdcv*"))
@@ -64,7 +61,7 @@
   (interactive)
   (let ((word (if mark-active
                   (buffer-substring-no-properties (region-beginning) (region-end))
-                  (current-word nil t))))
+		(current-word nil t))))
     (setq word (read-string (format "Search the dictionary for (default %s): " word)
                             nil nil word))
     (set-buffer (get-buffer-create "*sdcv*"))

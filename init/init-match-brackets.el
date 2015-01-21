@@ -1,4 +1,4 @@
-;;  Time-stamp: <naturezhang 2015/01/20 00:10:03>
+;;  Time-stamp: <naturezhang 2015/01/20 14:37:08>
 
 ;;{{{ 使用%就可以上下翻动,匹配的括号
 ;;如果没有括号就输入%
@@ -10,17 +10,11 @@ Argument ARG paren."
   (cond (
 	 (looking-at "\\s\(")
 	 (forward-list 1)
-	 (backward-char 1)
-	 )
+	 (backward-char 1))
 	(
 	 (looking-at "\\s\)")
 	 (forward-char 1)
-	 (backward-list 1)
-	 )
-	;(t
-	 ;(self-insert-command (or arg 1))
-	 ;)
-	)
-  )
+	 (backward-list 1))))
+
 
 (provide 'init-match-brackets)

@@ -1,4 +1,4 @@
-;;  Time-stamp: <naturezhang 2015/01/09 17:25:24>
+;;  Time-stamp: <naturezhang 2015/01/20 14:34:35>
 
 ;;跳转 标记  在两个 之间跳转  C-, C-.
 (global-set-key [(control ?\.)] 'ska-point-to-register)
@@ -18,10 +18,8 @@ that was stored with ska-point-to-register."
   (interactive)
   ;; (setq zmacs-region-stays t)
   (let ((tmp (point-marker)))
-        (jump-to-register 6)
-        (set-register 6 tmp)))
-;  (jump-to-register 6))
-
+    (jump-to-register 6)
+    (set-register 6 tmp)))
 
 
 (provide 'init-jump-mark)
