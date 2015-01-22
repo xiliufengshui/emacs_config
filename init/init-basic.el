@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/20 23:31:03>
+;; Time-stamp: <naturezhang 2015/01/22 11:08:35>
 ;;去掉工具栏
 (tool-bar-mode 0)
 ;;去掉菜单栏
@@ -6,7 +6,7 @@
 ;;关闭启动时开机画面
 (setq inhibit-startup-message t)
 ;;不要滚动栏，现在都用滚轴鼠标了，可以不用滚动栏了
-;;(scroll-bar-mode nil)
+(scroll-bar-mode nil)
 ;;鼠标指针规避光标
 (mouse-avoidance-mode 'animate)
 
