@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/23 03:23:30>
+;; Time-stamp: <naturezhang 2015/01/23 14:14:12>
 
 (require-package 'company)
 
@@ -6,8 +6,34 @@
 (setq company-show-numbers t)
 (setq company-minimum-prefix-length 1)
 
-;;(define-key company-mode-map (kbd "C-n") 'company-select-next)
-;;(define-key company-mode-map (kbd "C-p") 'company-select-previous)
+(defvar company-active-map
+  (let ((keymap (make-sparse-keymap)))
+    (define-key keymap "\e\e\e" 'company-abort)
+    (define-key keymap "\C-g" 'company-abort)
+    (define-key keymap (kbd "C-n") 'company-select-next)
+    (define-key keymap (kbd "C-p") 'company-select-previous)
+    (define-key keymap (kbd "<down>") 'company-select-next-or-abort)
+    (define-key keymap (kbd "<up>") 'company-select-previous-or-abort)
+    (define-key keymap [down-mouse-1] 'ignore)
+    (define-key keymap [down-mouse-3] 'ignore)
+    (define-key keymap [mouse-1] 'company-complete-mouse)
+    (define-key keymap [mouse-3] 'company-select-mouse)
+    (define-key keymap [up-mouse-1] 'ignore)
+    (define-key keymap [up-mouse-3] 'ignore)
+    (define-key keymap [return] 'company-complete-selection)
+    (define-key keymap (kbd "RET") 'company-complete-selection)
+    (define-key keymap [tab] 'company-complete-common)
+    (define-key keymap (kbd "TAB") 'company-complete-common)
+    (define-key keymap (kbd "<f1>") 'company-show-doc-buffer)
+    (define-key keymap (kbd "C-h") 'company-show-doc-buffer)
+    (define-key keymap "\C-w" 'company-show-location)
+    (define-key keymap "\C-s" 'company-search-candidates)
+    (define-key keymap "\C-\M-s" 'company-filter-candidates)
+    (dotimes (i 10)
+      (define-key keymap (read-kbd-macro (format "M-%d" i)) 'company-complete-number))
+     keymap)
+  "Keymap that is enabled during an active completion.")
+
 
 (deftheme custom
   "My custom faces that fix some theme annoyances.")
