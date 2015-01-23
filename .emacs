@@ -1,4 +1,4 @@
-;;   Time-stamp: <naturezhang 2015/01/21 20:34:13>
+;;   Time-stamp: <naturezhang 2015/01/22 23:23:09>
 
 ;; init file
 (add-to-list 'load-path "~/emacs_config/init")
@@ -20,7 +20,7 @@
 (require 'init-elpa-expand-region)
 (require 'init-elpa-dired)
 (require 'init-elpa-golden-ratio)
-(require 'init-elpa-highlight-symbol)
+;;(require 'init-elpa-highlight-symbol)
 (require 'init-elpa-magit)
 
 
