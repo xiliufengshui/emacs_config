@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/23 14:14:12>
+;; Time-stamp: <naturezhang 2015/01/23 14:36:37>
 
 (require-package 'company)
 
@@ -31,7 +31,7 @@
     (define-key keymap "\C-\M-s" 'company-filter-candidates)
     (dotimes (i 10)
       (define-key keymap (read-kbd-macro (format "M-%d" i)) 'company-complete-number))
-     keymap)
+    keymap)
   "Keymap that is enabled during an active completion.")
 
 
@@ -44,8 +44,8 @@
  '(company-tooltip-selection ((t :background "steelblue" :foreground "white")))
  '(company-tooltip-mouse ((t :background "blue" :foreground "white")))
  '(company-tooltip-common ((t :background "lightgray" :foreground "blue")))
-;; '(company-tooltip-common-selection ((t t :background "lightgray" :foreground "black")))
-;; '(company-tooltip-common-selection ((t :background "#4682b3" :foreground "blue")))
+ ;; '(company-tooltip-common-selection ((t t :background "lightgray" :foreground "black")))
+ ;; '(company-tooltip-common-selection ((t :background "#4682b3" :foreground "blue")))
  '(company-tooltip-common-selection ((t :background "#5996bf" :foreground "blue")))
  ;; '(company-tooltip-annotation ((t :background "" :foreground "")))
  '(company-scrollbar-fg ((t :background "#939393")))
@@ -57,8 +57,8 @@
 
 (add-hook 'emacs-lisp-mode-hook
 	  '(lambda()
-
 	     (company-mode)
+	     (semantic-mode 0)
 	     (setq company-backends '(
 				      (
 				       company-yasnippet				       
@@ -71,6 +71,7 @@
 (add-hook 'python-mode-hook
 	  '(lambda()
 	     (company-mode)
+	     (semantic-mode 0)
 	     (setq company-backends '(
 				      (
 				       company-yasnippet				       
