@@ -1,4 +1,4 @@
-;;   Time-stamp: <naturezhang 2015/01/22 23:23:09>
+;;   Time-stamp: <naturezhang 2015/01/24 16:52:31>
 
 ;; init file
 (add-to-list 'load-path "~/emacs_config/init")
@@ -27,13 +27,13 @@
 ;;----------------------------------------------------------------------------
 ;; load configs from local
 ;;----------------------------------------------------------------------------
+(require 'init-sessions)
 (require 'init-ido)
 (require 'init-basic)
 (require 'init-binding-key)
 ;;(require 'init-brackets-complete)
 (require 'init-fullscreen)
 ;;(require 'init-gnus)
-(require 'init-go-to-char)
 (require 'init-insert-copyright)
 (require 'init-insert-date)
 (require 'init-jump-mark)

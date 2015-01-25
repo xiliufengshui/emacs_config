@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/22 16:48:58>
+;; Time-stamp: <naturezhang 2015/01/24 20:11:35>
 ;;去掉工具栏
 (tool-bar-mode 0)
 ;;去掉菜单栏
@@ -88,6 +88,11 @@
 ;; save buffer with utf-8-unix
 (setq default-buffer-file-coding-system 'utf-8-unix)
 
+;; don't use tabs to indent
+(setq-default indent-tabs-mode nil)
+;; but maintain correct appearance
+(setq-default tab-width 8)
+    
 ;;递归使用minibuffer
 (setq enable-recursive-minibuffers t)
 

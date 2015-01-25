@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/23 14:36:37>
+;; Time-stamp: <naturezhang 2015/01/25 02:47:36>
 
 (require-package 'company)
 
@@ -71,6 +71,7 @@
 (add-hook 'python-mode-hook
 	  '(lambda()
 	     (company-mode)
+             ;;(run-python)
 	     (semantic-mode 0)
 	     (setq company-backends '(
 				      (
