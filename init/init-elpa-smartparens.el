@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/27 15:17:18>
+;; Time-stamp: <naturezhang 2015/01/27 15:19:36>
 
 (require-package 'smartparens)
 
