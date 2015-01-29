@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/25 02:18:32>
+;; Time-stamp: <naturezhang 2015/01/29 14:31:01>
 
 ;; 绑定 前缀 c-; for myself
 (define-prefix-command 'ctl-\;-map)
@@ -22,6 +22,15 @@
 (global-set-key (kbd "C-; p") 'my-switch-to-previous-buffer)
 (global-set-key (kbd "C-; e") 'eshell)
 (global-set-key (kbd "C-; g") 'my-go-to-char)
+
+;; helm key boundp
+(global-set-key (kbd "C-; x") 'helm-M-x)
+(global-set-key (kbd "C-; f") 'helm-find-files)
+(global-set-key (kbd "C-; b") 'helm-mini)
+(global-set-key (kbd "C-; SPC") 'helm-all-mark-rings)
+(global-set-key (kbd "C-; r") 'helm-register)
+(global-set-key (kbd "C-; s") 'helm-occur)
+
 ;; ;; cedet semantic
 ;; (global-set-key (kbd "C-; C-j") 'semantic-ia-fast-jump)
 ;; (global-set-key (kbd "C-; j") 'semantic-mrub-switch-tags)
