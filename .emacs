@@ -1,4 +1,4 @@
-;;   Time-stamp: <naturezhang 2015/01/27 15:30:59>
+;;   Time-stamp: <naturezhang 2015/01/29 16:20:39>
 
 ;; init file
 (add-to-list 'load-path "~/emacs_config/init")
@@ -22,6 +22,8 @@
 (require 'init-elpa-golden-ratio)
 ;;(require 'init-elpa-highlight-symbol)
 (require 'init-elpa-magit)
+(require 'init-elpa-helm)
+(require 'init-elpa-projectile)
 
 
 ;;----------------------------------------------------------------------------
@@ -69,6 +71,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (tango-dark)))
+ '(helm-external-programs-associations (quote (("el" . "vi"))))
  '(session-use-package t nil (session)))
 
 (custom-set-faces
