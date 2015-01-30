@@ -1,4 +1,4 @@
-;;   Time-stamp: <naturezhang 2015/01/29 16:20:39>
+;;   Time-stamp: <naturezhang 2015/01/30 17:22:34>
 
 ;; init file
 (add-to-list 'load-path "~/emacs_config/init")
@@ -6,6 +6,7 @@
 
 (require 'init-benchmarking) ;; Measure startup time from purcell
 (require 'init-packages) 
+(require 'init-elpa-exec-path-from-shell)
 
 
 ;;----------------------------------------------------------------------------
@@ -24,12 +25,12 @@
 (require 'init-elpa-magit)
 (require 'init-elpa-helm)
 (require 'init-elpa-projectile)
-
+;;(require 'init-elpa-ggtags)
 
 ;;----------------------------------------------------------------------------
 ;; load configs from local
 ;;----------------------------------------------------------------------------
-(require 'init-sessions)
+;;(require 'init-sessions)
 (require 'init-ido)
 (require 'init-basic)
 (require 'init-binding-key)
