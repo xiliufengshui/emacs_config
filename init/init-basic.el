@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/24 20:11:35>
+;; Time-stamp: <naturezhang 2015/01/31 00:30:23>
 ;;去掉工具栏
 (tool-bar-mode 0)
 ;;去掉菜单栏
