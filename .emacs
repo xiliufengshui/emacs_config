@@ -1,4 +1,4 @@
-;;   Time-stamp: <naturezhang 2015/01/30 17:22:34>
+;;   Time-stamp: <naturezhang 2015/01/31 00:59:31>
 
 ;; init file
 (add-to-list 'load-path "~/emacs_config/init")
@@ -26,6 +26,8 @@
 (require 'init-elpa-helm)
 (require 'init-elpa-projectile)
 ;;(require 'init-elpa-ggtags)
+;;(require 'init-elpa-sr-speedbar)
+
 
 ;;----------------------------------------------------------------------------
 ;; load configs from local
