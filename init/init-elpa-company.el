@@ -1,10 +1,10 @@
-;; Time-stamp: <naturezhang 2015/01/25 02:47:36>
+;; Time-stamp: <naturezhang 2015/01/31 14:13:14>
 
 (require-package 'company)
 
 (setq company-idle-delay 0)
 (setq company-show-numbers t)
-(setq company-minimum-prefix-length 1)
+(setq company-minimum-prefix-length 2)
 
 (defvar company-active-map
   (let ((keymap (make-sparse-keymap)))
@@ -56,62 +56,62 @@
  )
 
 (add-hook 'emacs-lisp-mode-hook
-	  '(lambda()
-	     (company-mode)
-	     (semantic-mode 0)
-	     (setq company-backends '(
-				      (
-				       company-yasnippet				       
-				       company-dabbrev-code
-				       company-elisp
-				       company-keywords
-				       company-files
-				       )))))
+          '(lambda()
+             (company-mode)
+             (semantic-mode 0)
+             (setq company-backends '(
+                                      (
+                                       company-yasnippet
+                                       company-dabbrev-code
+                                       company-elisp
+                                       company-keywords
+                                       company-files
+                                       )))))
 
 (add-hook 'python-mode-hook
-	  '(lambda()
-	     (company-mode)
+          '(lambda()
+             (company-mode)
              ;;(run-python)
-	     (semantic-mode 0)
-	     (setq company-backends '(
-				      (
-				       company-yasnippet				       
-				       company-dabbrev-code
-				       ;;company-dabbrev
-				       company-keywords
-				       company-capf
-				       company-files
-				       )))))
+             (semantic-mode 0)
+             (setq company-backends '(
+                                      (
+                                       company-yasnippet
+                                       company-dabbrev-code
+                                       ;;company-dabbrev
+                                       company-keywords
+                                       company-capf
+                                       company-files
+                                       )))))
 
 (add-hook 'c-mode-hook
-	  '(lambda()
-	     (company-mode)
-	     (semantic-mode 1)
-	     (setq company-backends '(
-				      (
-				       company-yasnippet
-				       company-dabbrev-code
-				       ;;company-dabbrev
-				       company-keywords
-				       ;;company-clang
-				       company-semantic
-				       ;;company-cmake
-				       )))))
+          '(lambda()
+             (company-mode)
+             (semantic-mode 1)
+             (setq company-backends '(
+                                      (
+                                       company-yasnippet
+                                       company-dabbrev-code
+                                       ;;company-dabbrev
+                                       company-keywords
+                                       ;;company-clang
+                                       company-semantic
+                                       ;;company-cmake
+                                       )))))
 
 (add-hook 'c++-mode-hook
-	  '(lambda()
-	     (company-mode)
-	     (semantic-mode 1)
-	     (setq company-backends '(
-				      (
-				       company-yasnippet
-				       company-dabbrev-code
-				       ;;company-dabbrev
-				       company-keywords
-				       ;;company-clang
-				       company-semantic
-				       ;;company-cmake
-				       )))))
+          '(lambda()
+             (company-mode)
+             (semantic-mode 1)
+             (setq company-backends '(
+                                      (
+                                       company-yasnippet
+                                       company-dabbrev-code
+                                       ;;company-dabbrev
+                                       company-keywords
+                                       ;;company-clang
+                                       company-semantic
+                                       ;;company-cmake
+                                       )))))
 
 ;; company-bbdb
 ;; company-nxml
