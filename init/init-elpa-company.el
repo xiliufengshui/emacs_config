@@ -1,6 +1,7 @@
-;; Time-stamp: <naturezhang 2015/01/31 14:13:14>
+;; Time-stamp: <naturezhang 2015/01/31 16:38:19>
 
 (require-package 'company)
+(require-package 'company-c-headers)
 
 (setq company-idle-delay 0)
 (setq company-show-numbers t)
@@ -95,6 +96,7 @@
                                        company-keywords
                                        ;;company-clang
                                        company-semantic
+                                       company-c-headers
                                        ;;company-cmake
                                        )))))
 
@@ -110,6 +112,7 @@
                                        company-keywords
                                        ;;company-clang
                                        company-semantic
+                                       company-c-headers
                                        ;;company-cmake
                                        )))))
 
