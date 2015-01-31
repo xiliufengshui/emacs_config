@@ -1,7 +1,6 @@
-;; Time-stamp: <naturezhang 2015/01/30 17:15:33>
+;; Time-stamp: <naturezhang 2015/01/31 00:42:04>
 
 (require-package 'helm)
-(require-package 'helm-gtags)
 
 (require 'helm-config)
 (helm-mode 1)
@@ -49,32 +48,37 @@
 (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action) ; rebind tab to do persistent action
 (define-key helm-map (kbd "C-z")  'helm-select-action) ; list actions using C-z
 
+;;(require-package 'helm-gtags)
+;; (setq
+;;  helm-gtags-ignore-case t
+;;  helm-gtags-auto-update t
+;;  helm-gtags-use-input-at-cursor t
+;;  helm-gtags-pulse-at-cursor t
+;;  helm-gtags-prefix-key "\C-cg"
+;; ;; helm-gtags-suggested-key-mapping t
+;;  )
 
+;; (require 'helm-gtags)
+;; ;; Enable helm-gtags-mode
+;; (add-hook 'dired-mode-hook 'helm-gtags-mode)
+;; (add-hook 'eshell-mode-hook 'helm-gtags-mode)
+;; (add-hook 'c-mode-hook 'helm-gtags-mode)
+;; (add-hook 'c++-mode-hook 'helm-gtags-mode)
+;; ;;(add-hook 'asm-mode-hook 'helm-gtags-mode)
 
-(require 'helm-gtags)
-;; Enable helm-gtags-mode
-(add-hook 'dired-mode-hook 'helm-gtags-mode)
-(add-hook 'eshell-mode-hook 'helm-gtags-mode)
-(add-hook 'c-mode-hook 'helm-gtags-mode)
-(add-hook 'c++-mode-hook 'helm-gtags-mode)
-;;(add-hook 'asm-mode-hook 'helm-gtags-mode)
-
-(setq
- helm-gtags-ignore-case t
- helm-gtags-auto-update t
- helm-gtags-use-input-at-cursor t
- helm-gtags-pulse-at-cursor t
- helm-gtags-prefix-key "\C-cg"
- helm-gtags-suggested-key-mapping t
- )
-
-
-;; (define-key helm-gtags-mode-map (kbd "C-c g a") 'helm-gtags-tags-in-this-function)
-;; (define-key helm-gtags-mode-map (kbd "C-j") 'helm-gtags-select)
-(define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-dwim)
-(define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
-;; (define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
-;; (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
+;; (define-key helm-gtags-mode-map (kbd "C-c g t") 'helm-gtags-find-tag)
+;; (define-key helm-gtags-mode-map (kbd "C-c g r") 'helm-gtags-find-rtag)
+;; (define-key helm-gtags-mode-map (kbd "C-c g s") 'helm-gtags-find-symbol)
+;; (define-key helm-gtags-mode-map (kbd "C-c g f") 'helm-gtags-find-files)
+;; (define-key helm-gtags-mode-map (kbd "C-c g d") 'helm-gtags-select)
+;; (define-key helm-gtags-mode-map (kbd "C-c g i") 'helm-gtags-tags-in-this-function)
+;; (define-key helm-gtags-mode-map (kbd "C-c g c") 'helm-gtags-create-tags)
+;; (define-key helm-gtags-mode-map (kbd "C-c g p") 'helm-gtags-parse-file)
+;; (define-key helm-gtags-mode-map (kbd "C-c g ,") 'helm-gtags-previous-history)
+;; (define-key helm-gtags-mode-map (kbd "C-c g .") 'helm-gtags-next-history)
+;; (define-key helm-gtags-mode-map (kbd "C-c g SPC") 'helm-gtags-show-stack)
+;; (define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-dwim)
+;; (define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
 
 
 (provide 'init-elpa-helm)
