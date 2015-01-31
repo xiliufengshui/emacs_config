@@ -1,4 +1,4 @@
-;;   Time-stamp: <naturezhang 2015/01/31 00:59:31>
+;;   Time-stamp: <naturezhang 2015/01/31 17:49:56>
 
 ;; init file
 (add-to-list 'load-path "~/emacs_config/init")
@@ -26,18 +26,20 @@
 (require 'init-elpa-helm)
 (require 'init-elpa-projectile)
 ;;(require 'init-elpa-ggtags)
-;;(require 'init-elpa-sr-speedbar)
+(require 'init-elpa-sr-speedbar)
+(require 'init-elpa-function-args)
 
 
 ;;----------------------------------------------------------------------------
 ;; load configs from local
 ;;----------------------------------------------------------------------------
+(require 'init-semantic)
 ;;(require 'init-sessions)
 (require 'init-ido)
 (require 'init-basic)
 (require 'init-binding-key)
 ;;(require 'init-brackets-complete)
-(require 'init-fullscreen)
+;;(require 'init-fullscreen)
 ;;(require 'init-gnus)
 (require 'init-insert-copyright)
 (require 'init-insert-date)
