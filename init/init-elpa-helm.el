@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/31 14:58:28>
+;; Time-stamp: <naturezhang 2015/01/31 23:19:16>
 
 (require-package 'helm)
 
@@ -34,6 +34,7 @@
 (setq ;helm-move-to-line-cycle-in-source     t ; move to end or beginning of source when reaching top or bottom of source.
       helm-ff-search-library-in-sexp        t ; search for library in `require' and `declare-function' sexp.
       helm-scroll-amount                    8 ; scroll 8 lines other window using M-<next>/M-<prior>
+      helm-split-window-in-side-p t ; open helm buffer inside current window, not occupy whole other window
       helm-ff-file-name-history-use-recentf t)
 
 ;; enable man page at point
