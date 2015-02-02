@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/02/02 16:14:02>
+;; Time-stamp: <naturezhang 2015/02/03 00:39:48>
 
 (require-package 'company)
 (require-package 'company-c-headers)
@@ -37,10 +37,10 @@
 
 
 ;; for theme tango-dark
-;; (deftheme custom
+;; (deftheme custom-company
 ;;   "My custom faces that fix some theme annoyances.")
 ;; (custom-theme-set-faces
-;;  'custom
+;;  'custom-company
 ;;  '(company-tooltip ((t :background "lightgray" :foreground "black")))
 ;;  '(company-tooltip-selection ((t :background "steelblue" :foreground "white")))
 ;;  '(company-tooltip-mouse ((t :background "blue" :foreground "white")))
