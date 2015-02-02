@@ -1,4 +1,4 @@
-;;   Time-stamp: <naturezhang 2015/01/31 17:49:56>
+;;   Time-stamp: <naturezhang 2015/02/02 16:03:56>
 
 ;; init file
 (add-to-list 'load-path "~/emacs_config/init")
@@ -28,6 +28,7 @@
 ;;(require 'init-elpa-ggtags)
 (require 'init-elpa-sr-speedbar)
 (require 'init-elpa-function-args)
+(require 'init-elpa-alect-themes)
 
 
 ;;----------------------------------------------------------------------------
@@ -69,19 +70,31 @@
 ;; config by emacs 
 ;;----------------------------------------------------------------------------
 
-;;(mapc 'load (directory-files "~/emacs_config/init"t"\\.el$"))
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes (quote (tango-dark)))
- '(helm-external-programs-associations (quote (("el" . "vi"))))
- '(session-use-package t nil (session)))
+;; ;;(mapc 'load (directory-files "~/emacs_config/init"t"\\.el$"))
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(custom-enabled-themes (quote (tango-dark)))
+;;  '(helm-external-programs-associations (quote (("el" . "vi"))))
+;;  '(session-use-package t nil (session)))
 
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(cursor ((t (:background "DeepSkyBlue1")))))
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(cursor ((t (:background "DeepSkyBlue1")))))
+
+
+;;----------------------------------------------------------------------------
+;; just for test
+;;----------------------------------------------------------------------------
+
+;;(load-theme 'alect-dark t)
+;;(load-theme 'alect-black t)
+;;(load-theme 'ample-zen t)
+;;(load-theme 'atom-dark t)
+;;(load-theme 'base16-ocean t)
+;;(load-theme 'calmer-forest t)
