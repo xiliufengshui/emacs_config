@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/31 16:38:19>
+;; Time-stamp: <naturezhang 2015/02/02 16:14:02>
 
 (require-package 'company)
 (require-package 'company-c-headers)
@@ -36,25 +36,25 @@
   "Keymap that is enabled during an active completion.")
 
 
-(deftheme custom
-  "My custom faces that fix some theme annoyances.")
-
-(custom-theme-set-faces
- 'custom
- '(company-tooltip ((t :background "lightgray" :foreground "black")))
- '(company-tooltip-selection ((t :background "steelblue" :foreground "white")))
- '(company-tooltip-mouse ((t :background "blue" :foreground "white")))
- '(company-tooltip-common ((t :background "lightgray" :foreground "blue")))
- ;; '(company-tooltip-common-selection ((t t :background "lightgray" :foreground "black")))
- ;; '(company-tooltip-common-selection ((t :background "#4682b3" :foreground "blue")))
- '(company-tooltip-common-selection ((t :background "#5996bf" :foreground "blue")))
- ;; '(company-tooltip-annotation ((t :background "" :foreground "")))
- '(company-scrollbar-fg ((t :background "#939393")))
- '(company-scrollbar-bg ((t :background "gray")))
- '(company-preview ((t :background nil :foreround "darkgray")))
- '(company-preview-common ((t :background nil :foreground "darkgray")))
- ;; '(company-preview-search ((t :background "" :foreground "")))
- )
+;; for theme tango-dark
+;; (deftheme custom
+;;   "My custom faces that fix some theme annoyances.")
+;; (custom-theme-set-faces
+;;  'custom
+;;  '(company-tooltip ((t :background "lightgray" :foreground "black")))
+;;  '(company-tooltip-selection ((t :background "steelblue" :foreground "white")))
+;;  '(company-tooltip-mouse ((t :background "blue" :foreground "white")))
+;;  '(company-tooltip-common ((t :background "lightgray" :foreground "blue")))
+;;  ;; '(company-tooltip-common-selection ((t t :background "lightgray" :foreground "black")))
+;;  ;; '(company-tooltip-common-selection ((t :background "#4682b3" :foreground "blue")))
+;;  '(company-tooltip-common-selection ((t :background "#5996bf" :foreground "blue")))
+;;  ;; '(company-tooltip-annotation ((t :background "" :foreground "")))
+;;  '(company-scrollbar-fg ((t :background "#939393")))
+;;  '(company-scrollbar-bg ((t :background "gray")))
+;;  '(company-preview ((t :background nil :foreround "darkgray")))
+;;  '(company-preview-common ((t :background nil :foreground "darkgray")))
+;;  ;; '(company-preview-search ((t :background "" :foreground "")))
+;;  )
 
 (add-hook 'emacs-lisp-mode-hook
           '(lambda()
