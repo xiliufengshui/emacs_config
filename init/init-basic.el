@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/31 00:30:23>
+;; Time-stamp: <naturezhang 2015/02/10 20:48:20>
 ;;去掉工具栏
 (tool-bar-mode 0)
 ;;去掉菜单栏
@@ -102,9 +102,10 @@
 ;; mapping key bindings 检测系统 如果是mac os 则替换键映射
 (when (eq system-type 'darwin) ;; mac specific settings
   (cd "~/")
-  (setq mac-option-modifier 'control)
-  (setq mac-command-modifier 'meta)
-  (setq mac-control-modifier 'super)
+  ;; 设置 mac 键映射 注释 改用 karabiner 修改系统 键映射
+  ;; (setq mac-option-modifier 'control)
+  ;; (setq mac-command-modifier 'meta)
+  ;; (setq mac-control-modifier 'super)
   ;;  (global-set-key [kp-delete] 'delete-char) ;; sets fn-delete to be right-delete
   )
 
