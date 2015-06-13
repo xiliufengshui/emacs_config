@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/30 18:48:17>
+;; Time-stamp: <naturezhang 2015/06/13 15:15:03>
 
 (require-package 'magit)
 
@@ -7,6 +7,7 @@
 (set-default 'magit-stage-all-confirm nil)
 (add-hook 'magit-mode-hook 'magit-load-config-extensions)
 
+(setq magit-last-seen-setup-instructions "1.4.0")
 ;; full screen magit-status
 ;; (defadvice magit-status (around magit-fullscreen activate)
 ;;   (window-configuration-to-register :magit-fullscreen)
