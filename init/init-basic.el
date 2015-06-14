@@ -1,12 +1,16 @@
-;; Time-stamp: <naturezhang 2015/02/10 20:48:20>
+;; Time-stamp: <naturezhang 2015/06/14 22:33:59>
 ;;去掉工具栏
 (tool-bar-mode 0)
+
 ;;去掉菜单栏
 ;;(menu-bar-mode 0)
+
 ;;关闭启动时开机画面
 (setq inhibit-startup-message t)
+
 ;;不要滚动栏，现在都用滚轴鼠标了，可以不用滚动栏了
 (scroll-bar-mode 0)
+
 ;;鼠标指针规避光标
 (mouse-avoidance-mode 'animate)
 
@@ -35,31 +39,43 @@
 
 ;;(format-time-string "%F")
 (setq display-time-format "%F %R %A")
+
 ;;时间使用24小时制
 ;;(setq display-time-24hr-format t)
+
 ;;时间显示包括日期和具体时间
 ;;(setq display-time-day-and-date t)
+
 ;;时间的变化频率，单位多少来着？
 (setq display-time-interval 30)
 
 ;;所有的问题用y/n方式，不用yes/no方式。有点懒，只想输入一个字母
 (fset 'yes-or-no-p 'y-or-n-p)
+
 ;;允许minibuffer自由变化其大小（指宽度）
 (setq resize-mini-windows t)
+
 ;;允许自动打开图片，如wiki里面
 (auto-image-file-mode)
+
 ;;在minibuffer上面可以显示列号
 (column-number-mode t)
+
 ;;显示默认的文档的宽度，看起来比较舒服？
 (setq fill-column 80)
+
 ;;当指针到一个括号时，自动显示所匹配的另一个括号
 (show-paren-mode 1)
+
 ;;设定删除保存记录为200，可以方便以后无限恢复
 (setq kill-ring-max 200)
+
 ;;增大使用查找函数和变量的寻找范围
 (setq apropos-do-all t)
+
 ;;允许emacs和外部其他程序的粘贴
 (setq x-select-enable-clipboard t)
+
 ;;所有的备份文件都放置在~/emacs_config/backup目录下
 (setq version-control t)
 (setq kept-old-versions 2)
@@ -85,11 +101,13 @@
 
 ;; prefer utf-8 
 (setq prefer-coding-system 'utf-8-unix)
+
 ;; save buffer with utf-8-unix
 (setq default-buffer-file-coding-system 'utf-8-unix)
 
 ;; don't use tabs to indent
 (setq-default indent-tabs-mode nil)
+
 ;; but maintain correct appearance
 (setq-default tab-width 8)
     

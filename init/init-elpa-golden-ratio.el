@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/21 18:54:00>
+;; Time-stamp: <naturezhang 2015/06/14 22:11:41>
 
 (require-package 'golden-ratio)
 
@@ -7,6 +7,8 @@
 ;; (setq golden-ratio-exclude-modes '("ediff-mode"
 ;;                                    "eshell-mode" "dired-mode"))
 
+
+;; off default
 ;;(golden-ratio-mode 1)
 
 
