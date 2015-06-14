@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/29 14:31:01>
+;; Time-stamp: <naturezhang 2015/06/14 23:44:04>
 
 ;; 绑定 前缀 c-; for myself
 (define-prefix-command 'ctl-\;-map)
@@ -12,7 +12,7 @@
 (global-set-key (kbd "M-P") 'my-rollwindow-up)
 (global-set-key (kbd "C-; k") 'my-kill-all-buffer)
 (global-set-key (kbd "C-; c") 'my-compile)
-(global-set-key (kbd "C-; v") 'my-gvim-current-file)
+;; (global-set-key (kbd "C-; v") 'my-gvim-current-file)
 (global-set-key (kbd "C-; O") 'my-smart-open-line-above)
 (global-set-key (kbd "C-; o") 'my-smart-open-line)
 (global-set-key (kbd "C-; j") 'my-join-line)
