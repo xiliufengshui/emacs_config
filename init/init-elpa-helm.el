@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/31 23:19:16>
+;; Time-stamp: <naturezhang 2015/09/21 21:20:00>
 
 (require-package 'helm)
 
@@ -77,6 +77,7 @@
 (define-key helm-gtags-mode-map (kbd "C-c g ,") 'helm-gtags-previous-history)
 (define-key helm-gtags-mode-map (kbd "C-c g .") 'helm-gtags-next-history)
 (define-key helm-gtags-mode-map (kbd "C-c g SPC") 'helm-gtags-show-stack)
+(define-key helm-gtags-mode-map (kbd "C-c g n") 'helm-gtags-find-pattern)
 (define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-dwim)
 (define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
 
