@@ -1,4 +1,4 @@
-;;   Time-stamp: <naturezhang 2015/02/03 00:34:17>
+;;   Time-stamp: <naturezhang 2015/09/20 11:34:27>
 
 ;; init file
 (add-to-list 'load-path "~/emacs_config/init")
@@ -29,6 +29,8 @@
 (require 'init-elpa-sr-speedbar)
 (require 'init-elpa-function-args)
 (require 'init-elpa-alect-themes)
+(require 'init-elpa-molokai-theme)
+(require 'init-elpa-solarized-theme)
 
 
 ;;----------------------------------------------------------------------------
@@ -65,6 +67,11 @@
 ;;(require 'init-stardict)
 (require 'init-time-stamp)
 (require 'init-uniq-line)
+(require 'init-c-mode)
+(require 'init-python-mode)
+(require 'init-sh-mode)
+(require 'init-emacs-lisp-mode)
+;; (require 'init-plugin-molokai-theme)
 
 ;;----------------------------------------------------------------------------
 ;; config by emacs 
@@ -76,18 +83,17 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-; '(custom-enabled-themes (quote (tango-dark)))
-; '(helm-external-programs-associations (quote (("el" . "vi"))))
-; '(session-use-package t nil (session))
-)
+ '(custom-safe-themes
+   (quote
+    ("7153b82e50b6f7452b4519097f880d968a6eaf6f6ef38cc45a144958e553fbc6" "5e3fc08bcadce4c6785fc49be686a4a82a356db569f55d411258984e952f194a" "a0feb1322de9e26a4d209d1cfa236deaf64662bb604fa513cca6a057ddf0ef64" "ab04c00a7e48ad784b52f34aa6bfa1e80d0c3fcacc50e1189af3651013eb0d58" "04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "7356632cebc6a11a87bc5fcffaa49bae528026a78637acd03cae57c091afd9b9" "8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
+ '(speedbar-show-unknown-files t))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-; '(cursor ((t (:background "DeepSkyBlue1"))))
-)
+ )
 
 
 ;;----------------------------------------------------------------------------
