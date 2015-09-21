@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/09/19 21:05:41>
+;; Time-stamp: <naturezhang 2015/09/21 22:27:29>
 
 (require-package 'company)
 (require-package 'company-c-headers)
@@ -25,7 +25,7 @@
     (define-key keymap (kbd "RET") 'company-complete-selection)
     (define-key keymap [tab] 'company-complete-common)
     (define-key keymap (kbd "TAB") 'company-complete-common)
-    (define-key keymap (kbd "<f1>") 'company2-show-doc-buffer)
+    (define-key keymap (kbd "<f1>") 'company-show-doc-buffer)
     (define-key keymap (kbd "C-h") 'company-show-doc-buffer)
     (define-key keymap "\C-w" 'company-show-location)
     (define-key keymap "\C-s" 'company-search-candidates)
