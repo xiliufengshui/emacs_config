@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/09/19 21:02:01>
+;; Time-stamp: <naturezhang 2015/09/22 23:44:33>
 
 
 (add-hook 'python-mode-hook
@@ -12,7 +12,8 @@
                                        company-dabbrev-code
                                        ;;company-dabbrev
                                        company-keywords
-                                       company-capf
+                                       ;; 下面的需要 run_python
+                                       ;; company-capf
                                        company-files
                                        )))))
 
