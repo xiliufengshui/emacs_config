@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/06/14 23:44:04>
+;; Time-stamp: <naturezhang 2016/08/26 00:12:57>
 
 ;; 绑定 前缀 c-; for myself
 (define-prefix-command 'ctl-\;-map)
@@ -22,6 +22,7 @@
 (global-set-key (kbd "C-; p") 'my-switch-to-previous-buffer)
 (global-set-key (kbd "C-; e") 'eshell)
 (global-set-key (kbd "C-; g") 'my-go-to-char)
+(global-set-key (kbd "C-; h") 'hs-toggle-hiding)
 
 ;; helm key boundp
 (global-set-key (kbd "C-; x") 'helm-M-x)
