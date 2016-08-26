@@ -1,4 +1,4 @@
-;;  Time-stamp: <naturezhang 2015/01/21 01:57:43>
+;;  Time-stamp: <naturezhang 2016/08/26 22:58:33>
 
 (require 'package)
 ;; add package-archive
@@ -7,8 +7,9 @@
 ;;                          ("melpa" . "http://melpa.milkbox.net/packages/")))
 
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
-(add-to-list 'package-archives '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/"))
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives '("popkit" . "http://elpa.popkit.org/packages/"))
 
 ;; after-load
 (defmacro after-load (feature &rest body)
