@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/01/31 15:40:00>
+;; Time-stamp: <naturezhang 2016/09/07 15:47:52>
 
 ;;使用ido.el emacs 24.1 自带
 (require 'ido)
@@ -17,6 +17,14 @@
 ;; disable ido faces to see flx highlights.
 (setq ido-enable-flex-matching t)
 (setq ido-use-faces nil)
+
+;; make ido display choices vertically
+(setq ido-separator "\n")
+
+;; display any item that contains the chars you typed
+(setq ido-enable-flex-matching t)
+
+(setq max-mini-window-height 0.5)
 
 
 ;; sort ido filelist by mtime instead of alphabetically
