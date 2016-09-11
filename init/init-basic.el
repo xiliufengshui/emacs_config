@@ -1,4 +1,4 @@
-;; Time-stamp: <naturezhang 2015/06/14 22:33:59>
+;; Time-stamp: <naturezhang 2016/09/11 19:14:45>
 ;;去掉工具栏
 (tool-bar-mode 0)
 
@@ -100,10 +100,14 @@
 (setq frame-title-format "%b:%f")
 
 ;; prefer utf-8 
-(setq prefer-coding-system 'utf-8-unix)
+;; (setq prefer-coding-system 'utf-8-unix)
 
 ;; save buffer with utf-8-unix
-(setq default-buffer-file-coding-system 'utf-8-unix)
+;; (setq default-buffer-file-coding-system 'utf-8-unix)
+
+;; set default file encoding
+(set-language-environment "UTF-8")
+(set-default-coding-systems 'utf-8)
 
 ;; don't use tabs to indent
 (setq-default indent-tabs-mode nil)

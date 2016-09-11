@@ -1,4 +1,4 @@
-;;  Time-stamp: <naturezhang 2015/01/25 02:32:20>
+;;  Time-stamp: <naturezhang 2016/09/09 13:28:35>
 
 ;; compile
 (defun my-compile ()
@@ -218,6 +218,30 @@ occurence of CHAR."
     (search-forward (string char) nil nil n)
     (backward-char 1))
   (setq unread-command-events (list last-input-event)))
+
+;; search-current-word copy from xah
+(defun my-search-current-word ()
+  "Call `isearch' on current word or text selection.
+“word” here is A to Z, a to z, and hyphen 「-」 and underline 「_」, independent of syntax table.
+URL `http://ergoemacs.org/emacs/modernization_isearch.html'
+Version 2015-04-09"
+  (interactive)
+  (let ( -p1 -p2 )
+    (if (use-region-p)
+        (progn
+          (setq -p1 (region-beginning))
+          (setq -p2 (region-end)))
+      (save-excursion
+        (skip-chars-backward "-_A-Za-z0-9")
+        (setq -p1 (point))
+        (right-char)
+        (skip-chars-forward "-_A-Za-z0-9")
+        (setq -p2 (point))))
+    (setq mark-active nil)
+    (when (< -p1 (point))
+      (goto-char -p1))
+    (isearch-mode t)
+    (isearch-yank-string (buffer-substring-no-properties -p1 -p2))))
 
 
 (provide 'init-my-defun)
