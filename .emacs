@@ -1,4 +1,4 @@
-;;   Time-stamp: <naturezhang 2015/09/20 11:34:27>
+;;   Time-stamp: <naturezhang 2016/09/24 00:51:52>
 
 ;; init file
 (add-to-list 'load-path "~/emacs_config/init")
@@ -30,7 +30,7 @@
 (require 'init-elpa-function-args)
 (require 'init-elpa-alect-themes)
 (require 'init-elpa-molokai-theme)
-(require 'init-elpa-solarized-theme)
+;; (require 'init-elpa-solarized-theme)
 
 
 ;;----------------------------------------------------------------------------
